@@ -1,16 +1,18 @@
 {
-  "name": "react-kavia",
-  "version": "0.1.0",
+  "name": "fantasy_basketball_frontend",
+  "version": "1.0.0",
   "private": true,
+  "description": "Fantasy Basketball Draft Assistant - Ocean Professional UI with actionable guidance (mock data)",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "react-router-dom": "^6.26.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

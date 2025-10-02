@@ -1,82 +1,67 @@
-# Lightweight React Template for KAVIA
+# Fantasy Basketball Draft Assistant (Frontend)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+Ocean Professional themed, minimalist React application to assist during live auction drafts with actionable, real-time guidance (mocked initially).
 
 ## Features
-
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Dashboard layout:
+  - Left sidebar navigation
+  - Main draft interface (nominate, bid, finalize)
+  - Right guidance panel with live, context-aware tips
+- Team rosters view
+- Mock data for players, teams, live auction state
+- Clean, minimalist "Ocean Professional" style
 
 ## Getting Started
 
-In the project directory, you can run:
+Install dependencies and run:
 
-### `npm start`
-
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
+```bash
+npm install
+npm start
 ```
 
-### Components
+Open http://localhost:3000 in your browser.
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
+## Scripts
 
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
+- `npm start` - Start development server
+- `npm run build` - Production build
+- `npm test` - Run tests
 
-## Learn More
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+  components/
+    DraftInterface.js
+    GuidancePanel.js
+    Sidebar.js
+    TeamRoster.js
+    Topbar.js
+  context/
+    MockDataContext.js
+    ThemeContext.js
+  styles/
+    layout.css
+    theme.css
+  App.js
+  App.css
+  index.js
+  index.css
+```
 
-### Code Splitting
+## Theming
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+All theme tokens are defined in `src/styles/theme.css` and `src/index.css`:
+- Primary: #374151
+- Secondary: #9CA3AF
+- Success: #10B981
+- Error: #EF4444
+- Background: #FFFFFF
+- Surface: #F9FAFB
+- Text: #111827
 
-### Analyzing the Bundle Size
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- All guidance and auction logic is mocked for initial implementation. No external services are integrated yet.
+- The app is componentized for future expansion (APIs, sockets, deeper analytics).

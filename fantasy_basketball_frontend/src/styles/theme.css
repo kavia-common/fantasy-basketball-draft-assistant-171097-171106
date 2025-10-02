@@ -1,0 +1,74 @@
+:root {
+  /* Ocean Professional Theme Tokens */
+  --primary: #374151;
+  --secondary: #9CA3AF;
+  --success: #10B981;
+  --error: #EF4444;
+  --bg: #FFFFFF;
+  --surface: #F9FAFB;
+  --text: #111827;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  --accent: #2563EB;
+  --focus: rgba(37, 99, 235, 0.35);
+}
+
+/* Generic minimalist components */
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .05s ease, box-shadow .2s ease, border-color .2s ease, background-color .2s ease;
+}
+
+.btn:hover {
+  border-color: var(--secondary);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.btn-accent {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.sep {
+  height: 1px;
+  background: var(--border);
+  border: 0;
+  margin: 12px 0;
+}
