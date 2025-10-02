@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/fantasy-basketball-draft-assistant-171097-171106/fantasy_basketball_frontend"
+}
